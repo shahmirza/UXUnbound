@@ -7,6 +7,31 @@
 	xmlns:l="sap.ui.layout"
 	xmlns:f="sap.ui.layout.form" class="sapUiSizeCompact">
 	<Page title="UX Unbound">
-		<content></content>
+		<content>
+			<f:SimpleForm id="SimpleFormDisplay354"
+			editable="false"
+			layout="ResponsiveGridLayout"
+			title="Selection"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+				<f:content>
+					<Label text="Choose Project" required="true" class="sapUiTinyMarginTop"/>
+					<ComboBox items="{/ETS_PROJLISTS}">
+						<core:Item key="{PROJ_ID}" text="{PROJ_NAME}" />
+					</ComboBox>
+				</f:content>
+			</f:SimpleForm>
+		</content>
 	</Page>
 </core:View>
