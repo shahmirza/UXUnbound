@@ -1,0 +1,158 @@
+{
+	"_version": "1.5.0",
+	"sap.app": {
+		"id": "uxUnb",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponent",
+			"version": "0.0.0"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_belize"
+		]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "uxUnb.view.App",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.core": {
+
+				},
+				"sap.m": {
+
+				},
+				"sap.ui.layout": {
+
+				},
+				"sap.ushell": {
+
+				},
+				"sap.collaboration": {
+
+				},
+				"sap.ui.comp": {
+
+				},
+				"sap.uxap": {
+
+				}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "uxUnb.i18n.i18n"
+				}
+			}
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "uxUnb.view",
+				"controlId": "app",
+				"controlAggregation": "pages",
+				"async": true
+			},
+			"routes": [
+				{
+					"pattern": "",
+					"name": "first",
+					"target": "first"
+				},
+				{
+					"pattern": "second/{period}/{year}",
+					"name": "second",
+					"target": "second"
+				},
+				{
+					"pattern": "third/{period}/{year}/{CCenter}",
+					"name": "third",
+					"target": "third"
+				},
+				{
+					"pattern": "fourth/{period}/{year}/{CCenter}",
+					"name": "fourth",
+					"target": "fourth"
+				},
+				{
+					"pattern": "fifth/{period}/{year}/{CCenter}",
+					"name": "fifth",
+					"target": "fifth"
+				},
+				{
+					"pattern": "sixth/{period}/{year}/{CCenter}",
+					"name": "sixth",
+					"target": "sixth"
+				}
+
+			],
+			"targets": {
+
+				"first": {
+					"viewID": "S1",
+					"viewName": "S1"
+				},
+				"second": {
+					"viewId": "second",
+					"viewName": "second"
+				},
+				"third": {
+					"viewId": "third",
+					"viewName": "third"
+				},
+				"fourth": {
+					"viewId": "fourth",
+					"viewName": "fourth"
+				},
+				"fifth": {
+					"viewId": "fifth",
+					"viewName": "fifth"
+				},
+				"sixth": {
+					"viewId": "sixth",
+					"viewName": "sixth"
+				}
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		}
+	}
+}
