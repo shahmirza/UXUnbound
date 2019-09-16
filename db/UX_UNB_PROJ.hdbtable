@@ -1,0 +1,8 @@
+table.schemaName = "UX_UNBOUND";
+table.tableType = COLUMNSTORE;
+table.columns =
+ [
+    {name = "PROJ_ID"; sqlType = TINYINT; nullable = false;},
+	{name = "PROJ_NAME"; sqlType = NVARCHAR; length = 255; nullable = false;}
+ ];
+table.primaryKey.pkcolumns = ["PROJ_ID"];
