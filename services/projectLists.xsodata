@@ -1,3 +1,3 @@
 service  { 
-   "UX_UNB"."UX_UNB_PROJ" as "ETS_PROJLISTS";
+   "UX_UNBOUND"."UXUnbound.db::UX_UNB_PROJ" as "ETS_PROJLISTS";
 }  
